@@ -9,21 +9,23 @@ body{
 form{
     margin: 20px auto;
     display:flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
+    gap:3px;
     max-width:300px;
-    border:solid;
 }
-form > div{
-    width:100%;
-    border:solid;
+form :first-child{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    margin-bottom:25px;
 }
 label{
     flex-basis: 30% ;
-    border:solid;
 }
-hr{
-    height: 15px;
+.submit{
+    margin-top:15px;
+    padding: 1px 10px;
 }
 #success{
     margin: 20px auto;

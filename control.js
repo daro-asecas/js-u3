@@ -1,8 +1,11 @@
+document.querySelector("#login").addEventListener("submit",validateForm);
+
 function validateForm(event) {
     let errores = [];
     let corregir = 0;
 
-    let user = document.forms["login"]["user"].value;
+    let user = document.querySelector("#user").value;
+
     if (user == "") {
         errores.push("No escribiste el usuario. Acordate que debe contener @.");
         corregir++;
@@ -10,7 +13,7 @@ function validateForm(event) {
         errores.push("El usuario debe contener @.");
         corregir++;
     }
-    let pass = document.forms["login"]["password"].value;
+    let pass = document.querySelector("#password").value;
     if (pass == "") {
         errores.push("No escribiste la clave.");
         corregir++;

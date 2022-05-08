@@ -8,27 +8,17 @@
         <title>JS 3</title>
     </head>
     <body>
-        <form name="login" action="success.html" onsubmit="validateForm(event)">
+        <form id="login" name="login" action="success.html">
             <h4>Ingreso al Sistema</h4>
 
-            <hr>
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" placeholder="usu@rio">
 
-            <div>
-                <label for="user">Usuario:</label>
-                <input type="text" id="user" placeholder="usu@rio">
-            </div>
+            <label for="password">Clave:</label>
+            <input type="password" id="password" placeholder="········">
 
-            <div>
-                <label for="password">Clave:</label>
-                <input type="password" id="password" placeholder="········">
-            </div>
-
-            <hr>
-
-            <div>
-                <label for="submit"></label>
-                <input type="submit" value="Ingresar">
-            </div>
+            <label></label>
+            <input class="submit" type="submit" value="Ingresar">
 
         </form>
 
